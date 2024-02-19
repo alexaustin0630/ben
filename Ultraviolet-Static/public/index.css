@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#uv-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000; /* Black background */
+  padding: 5px; /* Adjusted padding for a thinner form */
+  box-sizing: border-box; /* Include padding and border in total width */
+  z-index: 1000; /* Set a high z-index to ensure it's on top of other elements */
+  border-radius: 8px; /* Adjusted border-radius for a less rounded look */
+}
+
+#uv-address {
+  background: none;
+  font-family: inherit;
+  padding: 0px 10px; /* Adjusted padding for a thinner input */
+  height: 38px; /* Adjusted height for a thinner input */
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  color: var(--text-color);
+  border-radius: 3px;
+  outline: none;
+  width: calc(100% - 20px); /* Adjusted width to account for padding */
+  margin-top: 5px;
+  border-radius: 6px; /* Adjusted border-radius for a less rounded look */
+  color: #fff;
+  transition: border-radius 0.1s;
+}
+
+#uv-address:focus {
+  border: 1px solid rgba(253, 253, 253, 0.514);
+  border-radius: 6px;
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.header-center {
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.left-margin {
+  margin: 0px 16px;
+}
+
+#uv-error {
+  color: #ff6666 !important;
+  white-space: pre-wrap;
+}
+
+#uv-error-code {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#uv-register-sw {
+  color: white;
+  background: #555555;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 20px;
+  line-height: 16px;
+  display: none;
+}
+
+#uv-register-sw:active {
+  background: #333333;
+}
+
+#uv-register-sw.show {
+  display: block;
+}
+
+.logo-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  object-fit: contain;
+  max-height: 50%;
+  max-width: 50%;
+  position: relative;
+  display: block;
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent 10%, transparent 90%, rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+
+footer {
+  margin: 0 5vw;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+footer > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+footer a,
+footer span {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.desc p {
+  width: 560px;
+  color: rgba(253, 253, 253, 0.514);
+}
+
+#uv-address {
+  background: none;
+  font-family: inherit;
+  padding: 0px 17px;
+  height: 48px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  color: var(--text-color);
+  border-radius: 3px;
+  outline: none;
+  width: calc(100% - 34px);
+  margin-top: 5px;
+  border-radius: 50px;
+  color: #fff;
+  transition: border-radius 0.1s;
+}
+
+#uv-address:focus {
+  border: 1px solid rgba(253, 253, 253, 0.514);
+  border-radius: 6px;
+}
+
+.credit {
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  border: #fff 1px solid;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.credit label {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.credit a,
+.credit label {
+  color: white;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.credit pre {
+  display: none;
+  width: 100%;
+}
+
+.credit label::after {
+  content: "show license";
+  cursor: pointer;
+}
+
+.credit input:checked + label::after {
+  content: "hide license";
+}
+
+.credit input:checked ~ pre {
+  display: block;
+}
+#tabs {
+  margin-top: 10px;
+}
+
+.tab {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab:hover {
+  background-color: #555;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 0 0 5px 5px;
+}
